@@ -1,0 +1,210 @@
+
+.container{
+    padding: 0px;
+    margin:0px;
+    height:100%;
+    width:100%;
+    display: flex;
+;
+}
+.img_container{
+    height: 100vh;
+    width:50%;
+    background-image: url('./assets/sidePanel_new-iCiYVcEK.svg');
+    background-size:cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    transform-origin: center;
+}
+.Message-div{
+    background-color: #ed9324;
+    color:white;
+    font-size: 1.2em;
+    transition: 0.5 ease;
+    
+}
+.form_container{
+    padding-top: 7%;
+    width:50%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-color:rgb(255, 255, 255);
+    height: fit-content;
+}
+
+form{
+    margin-top: 10px;
+    margin-right: 20px;
+    height:70%;
+    width:90%;
+    display:flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;   
+
+
+}
+.inputFields{
+    display:inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    margin:10px 5px  ;
+    width:90%;
+    height:10%;
+    box-sizing: border-box;
+
+
+}
+.label-container{
+
+    /* position: relative; */
+    display: inline-flex;
+    flex-direction: column;
+    width:100%;
+
+}
+.labels{
+    position:relative;
+    top:5px;
+    left:5px;
+    padding: 5px 0px 0px 10px;
+    width:fit-content;
+    height: max-content;
+    /* color:orange; */
+}
+.label-field{
+    outline: none;
+    position:absolute;
+    font-size: 1.2em;
+    background: transparent;
+    border:1px solid black;
+    width: 14%;
+    transition: 0.5 ease;
+    z-index:1111;
+    border-radius: 8px;
+
+}
+.label-field:focus,
+.label-field:valid{
+    border: 2px solid orange;
+    color:orange;
+
+}
+.label-field:focus + .labels,
+.label-field:valid + .labels{
+    color:orange;
+    background-color: white;
+    transform:translate(-5px,-18px) scale(0.8);
+    z-index: 1111;
+}
+.label-field.unselected{
+    border-color: black;
+    height:fit-content;
+    width:fit-content;
+    border-radius:10px ;
+}
+
+#designation{
+    width: 40%;
+
+}
+#Designation{
+    appearance: none;
+    border-radius: 8px;
+    border: 1px solid black;
+    width: 6%;
+    font-size: 1.2em;
+    background-color: transparent;
+    transition: 0.5s ease;
+    height:5%;
+}
+
+#Isd{
+
+    width:20%;
+}
+#ISD{
+    width:6%;
+    appearance: none;
+    border-radius: 8px;
+    border: 1px solid black;
+
+    font-size: 1.2em;
+    background-color: transparent;
+    transition: 0.5s ease;
+    height:5%;
+}
+
+#logo{
+    justify-content: center;
+    width:150px;
+    height:auto;
+    margin-bottom: 18px;
+}
+#otp_div{
+    display:none;
+}
+#phone_no{
+    width:31%;
+}
+#emailID{
+    width:38%;
+}
+#password{
+    width:38%;
+}
+
+#otp_verify{
+    width:38%;
+}
+
+.button{
+    background-color:#ed9324;
+    width:88%;
+    border:none;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    border-radius: 10px;
+    font-size: 20px;
+    color: black;
+    margin:3% 5% 4% 3% ;
+}
+@media (max-width: 900px) {
+    .img_container {
+        display: none; /* Hide image container on small screens */
+    }
+    
+    .form_container {
+        width: 90%;
+        justify-content: right;
+ /* Form container takes full width on small screens */
+    }
+
+    .label-field {
+        width: 25%;
+        background: transparent; /* Expand input fields to full width */
+    }
+    #Designation,#ISD{
+        appearance: none;
+        border-radius: 8px;
+        border: 1px solid black;
+        width: 10%;
+        font-size: 1.2em;
+        background-color: transparent;
+        transition: 0.5s ease;
+        height:5%;
+    }
+
+    #phone_no {
+        width: 55%; /* Expand input fields to full width */
+    }
+    #emailID, #password, #otp_verify {
+        width:67%;
+    }
+    
+    .button {
+        width: 86%;
+        margin-left: 1%; /* Button width adjusted for small screens */
+    }
+}

@@ -1,0 +1,32 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.welcome-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    text-align: center;
+    background-image: url('/Users/rahulkumarair/Documents/React full course/simpli/src/components/assets/sidePanel_new-iCiYVcEK.svg');
+    background-position: center; 
+    background-size: cover;
+    
+    color: #ed9324;
+}
+
+.welcome-container h1 {
+    font-size: 3em; 
+    
+    margin: 0; 
+}
+
+.welcome-container p {
+    font-size: 1.2em; 
+}
+h1:hover,p:hover{
+    transform:scale(1.3);
+    transition: 0.3s ease;
+}

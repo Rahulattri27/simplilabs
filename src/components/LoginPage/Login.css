@@ -1,0 +1,173 @@
+.login-container {
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+
+.login-form-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.login-form-content {
+  max-width: 400px; /* Max width of the form */
+  margin: 0 auto;   /* Center the form */
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-form-content .logo {
+  width: 150px; 
+  height: auto;
+  margin-bottom: 18px; 
+  align-self: center;
+  padding-left: 100px;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding-left: 70px;
+  margin-bottom: 2rem;
+  align-content:center;
+  justify-content: center;
+}
+
+.form-group {
+  margin-bottom: 1rem; /* Margin between form groups */
+}
+
+label {
+  display: block; /* Labels displayed as block elements */
+  margin-bottom: 0.5rem; /* Space below labels */
+  font-size: 0.875rem; /* Font size of labels */
+}
+
+input {
+  width: 100%; /* Full width for input fields */
+  padding: 0.5rem; /* Padding for input fields */
+  border: 1px solid #d1d5db; /* Border style */
+  border-radius: 8px; /* Rounded corners */
+}
+
+.password-input {
+  position: relative; /* Position for toggle button */
+}
+
+.toggle-password {
+  position: absolute;
+  right: 0.5rem;
+  top: 50%;
+  left:85%;
+  transform: translateY(-50%);
+  background: none; /* No background */
+  border: none; /* No border */
+  cursor: pointer; /* Pointer cursor */
+  font-size: 0.875rem; /* Font size for toggle button */
+  color: #6b7280; /* Color of the button */
+}
+
+.forgot-password {
+  text-align: right; /* Align forgot password link */
+  font-size: 0.875rem; /* Font size */
+  margin-bottom: 1rem; /* Space below the link */
+}
+
+.forgot-password a {
+  color: #4f46e5; /* Color for the link */
+  text-decoration: none; /* No underline for links */
+}
+
+.sign-in-button {
+  width: 100%; /* Full width for button */
+  padding: 0.5rem; /* Padding for button */
+  background-color: #ed9324; /* Background color */
+  color: white; /* Text color */
+  border: none; /* No border */
+  border-radius: 8px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor */
+  font-size: 1rem; /* Font size for button */
+}
+
+.sign-in-button:hover {
+  background-color: #d97706; /* Darker shade on hover */
+}
+
+.divider {
+  display: flex;
+  align-items: center; /* Center vertically */
+  text-align: center; /* Center text */
+  margin: 1rem 0; /* Space above and below divider */
+}
+
+.divider::before,
+.divider::after {
+  content: '';
+  flex: 1; /* Take available space */
+  border-bottom: 1px solid #d1d5db; /* Divider line */
+}
+
+.divider span {
+  padding: 0 0.5rem; /* Padding around the text */
+  color: #6b7280; /* Text color */
+  font-size: 0.875rem; /* Font size */
+}
+
+.google-sign-in,
+.otp-login {
+  width: 100%; /* Full width for buttons */
+  padding: 0.5rem; /* Padding for buttons */
+  margin-bottom: 1rem; /* Space below buttons */
+  background-color: white; /* Background color */
+  border: 1px solid #d1d5db; /* Border style */
+  border-radius: 8px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor */
+  display: flex; /* Flexbox for centering */
+  align-items: center; /* Center items vertically */
+  justify-content: center; /* Center items horizontally */
+}
+
+.google-sign-in img {
+  height: 1.5rem; /* Height of Google logo */
+  margin-right: 0.5rem; /* Space to the right of the logo */
+}
+
+.register-link {
+  text-align: center; /* Center the register link */
+  font-size: 0.875rem; /* Font size */
+  margin-top: 1rem; /* Space above link */
+}
+
+.register-link a {
+  color: #4f46e5; /* Color for the link */
+  text-decoration: none; /* No underline */
+}
+
+.error-message {
+  background-color: #fee2e2; /* Background for error messages */
+  border: 1px solid #f87171; /* Border style for error messages */
+  color: #b91c1c; /* Text color for error messages */
+  padding: 0.5rem; /* Padding for error messages */
+  border-radius: 8px; /* Rounded corners */
+  margin-top: 1rem; /* Space above error messages */
+}
+
+.login-image {
+  display: none; /* Hide image container by default */
+}
+
+@media (min-width: 1024px) {
+  .login-image {
+    display: block; /* Show image on larger screens */
+    flex: 1; /* Flex 1 to take available space */
+    background-image: url('../assets/sidePanel_new-iCiYVcEK.svg'); /* Background image */
+    background-size: cover; /* Cover for background image */
+    background-position: center; /* Center the image */
+  }
+}
